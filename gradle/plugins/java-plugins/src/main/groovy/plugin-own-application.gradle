@@ -1,0 +1,4 @@
+plugins{
+    id 'plugin-own-java-core'
+    id 'application'
+}

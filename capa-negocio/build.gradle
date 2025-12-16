@@ -1,0 +1,9 @@
+plugins{
+    id 'plugin-own-libraries'
+}
+
+dependencies {
+    implementation project(':capa-datos')
+    //implementation 'org.testng:testng:7.1.0'
+    testImplementation 'junit:junit:4.0'
+}

@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+
+    includeBuild('gradle/plugins')
+}
+
+dependencyResolutionManagement {
+    repositories{
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'ProyectoGradleBiblioteca'
+
+include 'aplicacion', 'capa-datos', 'capa-negocio'
+
+
+

@@ -1,0 +1,13 @@
+plugins{
+    id 'plugin-own-application'
+}
+
+application {
+    mainClass.set('com.proyecto.gradle.HeadClass')
+}
+
+dependencies {
+    implementation project(':capa-negocio')
+    implementation project(':capa-datos')
+}
+
