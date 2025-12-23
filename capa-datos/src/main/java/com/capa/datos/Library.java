@@ -37,7 +37,7 @@ public class Library {
     /**
      * Busca un libro por su ISBN y devuelve la referencia encontrada o {@code null} si no existe.
      */
-    public Book findBookByIsbn(String isbn) {
+    public Book findBookByIsbn(String isbn) throws BookNotFoundException {
         if (isbn == null) {
             return null;
         }
@@ -46,7 +46,8 @@ public class Library {
                 return book;
             }
         }
-        return null;
+        //return null;
+        throw new BookNotFoundException("El libro con isbn:  " + isbn + "no se encuentra." );
     }
 
     /**

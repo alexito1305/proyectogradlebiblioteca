@@ -28,15 +28,14 @@ public class BookInfo {
     }
 
     public Book findByIsbn(List<Book> catalog, String isbn) {
-        if (catalog == null || isbn == null) {
-            return null;
-        }
-        for (Book book : catalog) {
-            if (isbn.equalsIgnoreCase(book.getIsbn())) {
-                return book;
+           if (catalog == null || isbn == null) {
+                return null;
             }
-        }
-        return null;
+            for (Book book : catalog) {
+                if (isbn.equalsIgnoreCase(book.getIsbn())) {
+                    return book;
+                }
+            }return null;
     }
 }
 
